@@ -1,0 +1,50 @@
+canvas {
+  height: 233px;
+  width: 350px;
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+#editCanvas {
+  height: 233px;
+  weidth: 350px;
+  border: 1px solid black;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+h2:first-of-type {
+  margin-top: 25px;
+}
+
+.color-input {
+  width: 80% !important;
+}
+
+#title-color .btn {
+  background-color: rgba(0, 255, 0, 0.8);
+}
+
+#category-color .btn {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+.brand-logo {
+  margin-left: 25px;
+}
+
+nav {
+  background-color: #26a69a;
+  overflow: hidden;
+}
+
+.row {
+  margin-bottom: 4px;
+}
+
+.input-field {
+  margin: 4px 0 4px 0;
+}

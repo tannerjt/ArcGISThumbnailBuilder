@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Thumbnail Builder</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="./index.html" class="brand-logo">ArcGIS Thumbnail Builder</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html" target="_self">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <h2>About</h2>
+      <p>
+        Building great thumbnails is a critical step to making your ArcGIS Online content more transparent and approachable. You want your users to be able to understand important information about an item before clicking on it.
+      </p>
+      <p>
+        This is a tool to make the thumbnail creation process a little easier on you.
+      </p>
+      <p>
+        You're users are happy. You're happy. It's a win/win.
+      </p>
+      <h2>Query Parameters</h2>
+      <p>
+        To make the tool re-usable, you can add the query parameters below to your URL.
+      </p>
+      <p>
+        <a href="./index.html?background=./img/gallery/forest.jpg&logo=./img/gallery/odf_logo.png&title=Harry%20and%20the%20Hendersons%20Adventures&category=Story%20Map&titleColor=3,77,0,0.6&sidebarColor=255,200,0,0.6" target="_self">
+        See This Example
+      </a>
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>Description</th>
+            <th>Values</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>titleColor</td>
+            <td>Title BG Color</td>
+            <td>RGBA Color</td>
+            <td>0,255,0,0.8</td>
+          </tr>
+          <tr>
+            <td>sidebarColor</td>
+            <td>Sidebar BG Color</td>
+            <td>RGBA Color</td>
+            <td>0,0,255,0.8</td>
+          </tr>
+          <tr>
+            <td>category</td>
+            <td>Valid Item Category</td>
+            <td>String</td>
+            <td>Story Map</td>
+          </tr>
+          <tr>
+            <td>background</td>
+            <td>URL to background image</td>
+            <td>String</td>
+            <td>https://path.to.my.background.jpg</td>
+          </tr>
+          <tr>
+            <td>logo</td>
+            <td>URL to logo image</td>
+            <td>String</td>
+            <td>https://path.to.my.logo.jpg</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p></p>
+      <p></p>
+      <h2>Contact</h2>
+      <p>
+        This application is made freely available through the Oregon Geospatial Enterprise Office. If you have questions or comments, please contact
+        <a href="mailto:joshua.tanner@oregon.gov?subject=ArcGIS Online Thumbnail Builder">Joshua Tanner</a>.
+      </p>
+    </div>
+
+  </div>
+  <!-- /container -->
+  
+</body>
+
+</html>

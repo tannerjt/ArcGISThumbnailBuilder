@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Thumbnail Builder</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/materialize-colorpicker.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="./index.html" class="brand-logo">ArcGIS Thumbnail Builder</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="gallery.html" target="_self">Gallery</a></li>
+        <li><a href="help.html" target="_self">Help</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col m6 s12">
+        <div class="row">
+          <canvas id="edit-canvas"></canvas>
+        </div>
+
+        <div class="row">
+          <div id="title-color" class="file-field">
+            <div class="btn color-icon"></div>
+            <div class="file-path-wrapper">
+              <input type="text" class="color-input" />
+            </div>
+          </div>
+          <div id="category-color" class="file-field">
+            <div class="btn color-icon"></div>
+            <div class="file-path-wrapper">
+              <input type="text" class="color-input" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <a id="download-image" download="thumbnail_generated.png" class="waves-effect waves-light btn deep-purple lighten-2"><i class="material-icons left">save</i>Download</a>
+        </div>
+      </div>
+
+      <div class="col m6 s12">
+
+        <div class="row">
+          <h2>Title</h2>
+          <div class="input-field col s12">
+            <input placeholder="Item Title" type="text" id="title" name="title" />
+            <label for="title">Item Title</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>Sidebar</h2>
+          <div class="input-field col s12">
+            <select name="category" id="category">
+            <option value="Web Map">Web Map</option>
+            <option value="Story Map">Story Map</option>
+            <option value="Web App">Web App</option>
+            <option value="Feature Service">Feature Service</option>
+            <option value="Map Service">Map Service</option>
+            <option value="Collector App">Collector App</option>
+            <option value="Basemap">Basemap</option>
+            <option value="Dashboard">Dashboard</option>
+            <option value="Document">Document</option>
+          </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>Background Image</h2>
+          <input type="hidden" id="background-url" />
+          <div class="input-field col s12">
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>File</span>
+                <input type="file" id="background">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>Logo Image</h2>
+          <input type="hidden" id="logo-url" />
+          <div class="input-field col s12">
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>File</span>
+                <input type="file" id="logo">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /row -->
+
+  </div>
+  <!-- /container -->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./js/materialize-colorpicker.min.js"></script>
+  <script src="./js/editCanvas.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12419040-13"></script>
+  
+</body>
+
+</html>
