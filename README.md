@@ -11,7 +11,7 @@ thumbnails for ArcGIS Online items, utilizing HTML5 canvas.
 
 ![alt text](./img/gallery/bigfoot_theme.png)
 
-![alt text](./img/gallery/jaws.opng)
+![alt text](./img/gallery/jaws.png)
 
 
 
